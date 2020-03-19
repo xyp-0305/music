@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>music</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <ul>
+        <li>
+            <span>序号</span>
+            <span>歌曲</span>
+            <span>操作</span>
+        </li>
+        {{#each (musicList)}}
+        <li>
+            <span>{{xindex+1}}</span>
+            <span>{{this.name}}</span>
+            <span class="play" onclick="play('{{this.src}}')">播放</span>
+        </li>
+        {{/each}}
+    </ul>
+    <audio id="audio" src="" autoplay></audio>
+</body>
+<script>
+    var audio = document.getElementById('audio')
+    function play(src){
+        audio.setAttribute('src','/music/'+src)
+    }
+</script>
+</html>

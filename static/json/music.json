@@ -1,0 +1,17 @@
+[
+    {
+        "id": 1,
+        "name": "芒种",
+        "src": "芒种.mp3"
+    },
+    {
+        "id": 2,
+        "name": "童话镇",
+        "src": "童话镇.mp3"
+    },
+    {
+        "id": 3,
+        "name": "something just like this",
+        "src": "something just like this.mp3"
+    }
+]
